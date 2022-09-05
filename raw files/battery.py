@@ -48,7 +48,7 @@ while True:
     if percent >= maxbat or percent <= minbat:
         
         mixer.init()
-        mixer.music.load('gajban.mp3') 
+        mixer.music.load('Battery Fully Charged.mp3') 
         mixer.music.set_volume(0.9) 
         mixer.music.play() 
 

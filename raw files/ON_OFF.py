@@ -14,4 +14,7 @@ while 1:
     if text == "quit":
         break
     s.send(bytes(text, 'UTF-8'))
+
+# s.send(bytes('000000000000000000', 'UTF-8'))
+# s.send(bytes('111111111111111111', 'UTF-8'))
 s.close()
