@@ -51,17 +51,19 @@ while True:
         text = '0000000000000000000'
         s.send(bytes(text, 'UTF-8'))
 
-        print("\nWaiting for 60 seconds...\n")
-        time.sleep(60)
+        # print("\nWaiting for 60 seconds...\n")
+        # time.sleep(60)
         continue
 
     if percent <= minbat:
         text = '11111111111111111111'
         s.send(bytes(text, 'UTF-8'))
 
-        print("\nWaiting for 60 seconds...\n")
-        time.sleep(60)
+        # print("\nWaiting for 60 seconds...\n")
+        # time.sleep(60)
         continue
 
     else:
         continue
+
+s.close()
