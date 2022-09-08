@@ -1,11 +1,17 @@
 ## Laptop-Auto-Charger-using-Arduino-and-Relay
 
+- [See Project Video](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/WhatsApp%20Video%202022-09-09%20at%2000.53.42.mp4)
+- [.exe file for Windows](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/autosocket.exe)
+- [.apk file for Android](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/battery.apk)
+
+-----------------------
+
 `Bulb has been replaced with Charger`
 ![charger](https://user-images.githubusercontent.com/50515418/174425972-de004c74-49f4-4e75-96c2-61e6e4609cef.png)
 
 ------------------------------
 
-## my_bluetooth.ino
+## [my_bluetooth.ino](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/my_Bluetooth/my_Bluetooth.ino)
 
         char inputByte;
 
