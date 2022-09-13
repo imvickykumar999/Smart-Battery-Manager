@@ -1,4 +1,4 @@
-## Laptop-Auto-Charger-using-Arduino-and-Relay
+# Laptop-Auto-Charger-using-Arduino-and-Relay
 
 - [See Project Video](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/WhatsApp%20Video%202022-09-09%20at%2000.53.42.mp4)
 - [.exe file for Windows](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/autosocket.exe)
@@ -11,7 +11,7 @@
 
 ------------------------------
 
-## [my_bluetooth.ino](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/my_Bluetooth/my_Bluetooth.ino)
+# Upload into Arduino : [my_bluetooth.ino](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/my_Bluetooth/my_Bluetooth.ino)
 
         char inputByte;
 
@@ -39,4 +39,6 @@
 
 ------------------------------------
 
-![ss](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/Screenshot_20220913-231746.jpg?raw=true)
+# Publishing on Play Store
+
+[![ss](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/Screenshot_20220913-231746.jpg?raw=true)](https://www.youtube.com/watch?v=5GHT4QtotE4)
