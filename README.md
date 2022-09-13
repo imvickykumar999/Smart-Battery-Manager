@@ -37,3 +37,6 @@
             }
         }
 
+------------------------------------
+
+![ss](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/Screenshot_20220913-231746.jpg?raw=true)
