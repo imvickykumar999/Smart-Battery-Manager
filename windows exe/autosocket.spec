@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['autosocket.py'],
-             pathex=['C:\\Users\\Vicky\\Desktop\\Repository\\Laptop-Auto-Charger-using-Arduino-and-Relay'],
+             pathex=['C:\\Users\\Vicky\\Desktop\\Repository\\Laptop-Auto-Charger-using-Arduino-and-Relay\\windows exe'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -33,7 +33,7 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False,
+          console=True,
           disable_windowed_traceback=False,
           target_arch=None,
           codesign_identity=None,
