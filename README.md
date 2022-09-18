@@ -4,6 +4,17 @@
 - [.exe file for Windows](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/autosocket.exe)
 - [.apk file for Android](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/battery.apk)
 
+------------------------------------
+
+# Publishing on Play Store : [YouTube Tutorial](https://www.youtube.com/watch?v=5GHT4QtotE4)
+
+<table>
+   <tr>
+      <td><img src="https://github.com/imvickykumar999/Smart-Battery-Manager/blob/main/android%20apk/WhatsApp%20Image%202022-09-19%20at%2000.05.33.jpeg?raw=true" alt="3" width = 400px></td>
+      <td><img src="https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/Screenshot_20220913-231746.jpg?raw=true" align="right" alt="4" width = 400px></td>
+  </tr>
+</table>
+
 -----------------------
 
 # `Bulb` has been replaced with `Charger`
@@ -12,7 +23,7 @@
 
 --------------------------------
 
-# `4 Channel Relay` Circuit Diagram
+# `4 Channel Relay` Circuit Diagram : [Firebase Login](https://console.firebase.google.com/u/0/project/home-automation-336c0/database/home-automation-336c0-default-rtdb/data/~2FA~2FB~2FC~2FSwitch)
 
 ![image](https://user-images.githubusercontent.com/50515418/190896691-56ffb755-f804-4aab-909b-736becf829a3.png)
 
@@ -43,9 +54,3 @@
               } 
             }
         }
-
-------------------------------------
-
-# Publishing on Play Store
-
-[![ss](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/Screenshot_20220913-231746.jpg?raw=true)](https://www.youtube.com/watch?v=5GHT4QtotE4)
