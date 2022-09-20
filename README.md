@@ -10,7 +10,7 @@
 
 <table>
    <tr>
-      <td><img src="https://github.com/imvickykumar999/Smart-Battery-Manager/blob/main/android%20apk/WhatsApp%20Image%202022-09-19%20at%2000.05.33.jpeg?raw=true" alt="3" width = 400px></td>
+      <td><img src="https://github.com/imvickykumar999/Smart-Battery-Manager/blob/main/android%20apk/relay%20bluetooth/WhatsApp%20Image%202022-09-19%20at%2000.05.33.jpeg?raw=true?raw=true" alt="3" width = 400px></td>
       <td><img src="https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/Screenshot_20220913-231746.jpg?raw=true" align="right" alt="4" width = 400px></td>
   </tr>
 </table>
