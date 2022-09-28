@@ -1,39 +1,47 @@
-    
-import psutil, time, serial
+
+import time, serial, psutil
+import serial.tools.list_ports
+
+ports = serial.tools.list_ports.comports(include_links=False)
+for port in ports :
+    print('\nPort : '+ port.device)
+
+ser = serial.Serial(port.device, 9600, timeout=1)
+ser.flushInput()
+ser.flushOutput()
+
+if ser.isOpen():
+    ser.close()
 
 battery = psutil.sensors_battery()
 percent = battery.percent
-
-com = 'com8'
-maxbat = percent+1
-minbat = percent-1
+com = str(ser.name)
 
 # maxbat = 97
 # minbat = 30
-Arduino_Serial = serial.Serial(com, 9600)
 
-count = i = 0
-data = []
+maxbat = input("Enter Max % : ")
+if maxbat == '':
+    maxbat = percent+1
+
+minbat = input("Enter Min % : ")
+if minbat == '':
+    minbat = percent-1
+
+Arduino_Serial = serial.Serial(com, 9600)
 while True:
 
     battery = psutil.sensors_battery()
-    percent = battery.percent
+    percent = battery[0]
 
-    count += 1
-    i += 1
-    data.append(percent)
-
-    print(str(percent), '[', str(maxbat), ',',  str(minbat), ']', battery[2])
+    print(percent, '[', maxbat, ',',  minbat, ']', battery[2])
     time.sleep(3)
 
-    if percent >= maxbat:
-        text = '0'
-        input_data = text.encode()
+    if percent >= int(maxbat):
+        input_data = '0'.encode()
         Arduino_Serial.write(input_data)
 
-    if percent <= minbat:
-        text = '1'
-        input_data = text.encode()
+    if percent <= int(minbat):
+        input_data = '1'.encode()
         Arduino_Serial.write(input_data)
-
     continue
