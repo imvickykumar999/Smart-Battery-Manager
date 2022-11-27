@@ -4,6 +4,10 @@
 - [.exe file for Windows](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/autosocket.exe)
 - [.apk file for Android](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/battery.apk)
 
+--------------------------------------
+
+[![final block code mit](https://github.com/imvickykumar999/Smart-Battery-Manager/blob/main/final%20project/blocks%20(2).png?raw=true)](https://github.com/imvickykumar999/Smart-Battery-Manager/blob/main/final%20project/GoogleAccount_checkpoint1.apk)
+
 ------------------------------------
 
 # Publishing on Play Store : [YouTube Tutorial](https://www.youtube.com/watch?v=5GHT4QtotE4)
