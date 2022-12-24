@@ -1,5 +1,7 @@
 # Laptop-Auto-Charger-using-Arduino-and-Relay
 
+---------------------------
+
 - [See Project Video](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/WhatsApp%20Video%202022-09-09%20at%2000.53.42.mp4)
 - [.exe file for Windows](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/autosocket.exe)
 - [.apk file for Android](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/final%20project/battery.apk)
