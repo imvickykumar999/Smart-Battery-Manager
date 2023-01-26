@@ -35,28 +35,88 @@
 
 ------------------------------
 
-# Upload into Arduino : [my_bluetooth.ino](https://github.com/imvickykumar999/Laptop-Auto-Charger-using-Arduino-and-Relay/blob/main/my_Bluetooth/my_Bluetooth.ino)
+## `Wi-Fi Mode`
 
-        char inputByte;
+    #include <WiFi.h>
+    #include "FirebaseESP32.h"
+    //#include <Servo.h>
+    int servoPin = 2; // D2 PIN
+    //Servo Servo1;
+    #define WIFI_SSID "Vicky"
+    #define WIFI_PASSWORD "*********"
+    #define FIREBASE_HOST "home-automation-336c0-default-rtdb.firebaseio.com"
+    #define FIREBASE_AUTH "********************************"
+    FirebaseData firebaseData;
+    void setup() {
+    //  Servo1.attach(servoPin);
+      Serial.begin(115200);
+      WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+      Serial.print("Connecting to Wi-Fi");
+      while (WiFi.status() != WL_CONNECTED)
+      {
+        Serial.print(".");
+        delay(300);
+      }
+      Serial.println();
+      Serial.print("Connected with IP: ");
+      Serial.println(WiFi.localIP());
+      Serial.println();
+      Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
+      Firebase.reconnectWiFi(true);
+      //Set database read timeout to 1 minute (max 15 minutes)
+      Firebase.setReadTimeout(firebaseData, 1000 * 60);
+      pinMode(servoPin, OUTPUT);
+    }
+    void loop() {
+        if (Firebase.getInt(firebaseData,"/A/B/C/Switch"))
+        {
+          int val2 = (firebaseData.intData());
 
-        void setup() {
-         Serial.begin(9600);
-         pinMode(13,OUTPUT);
-         digitalWrite(13,HIGH);
+          if(val2==1){
+            digitalWrite(servoPin, HIGH);
+            Serial.println("HIGH");
+          }
+
+          else{
+            digitalWrite(servoPin, LOW);
+            Serial.println("LOW");
+          }
+        }
+        delay(200);
+      // put your main code here, to run repeatedly:
+    }
+
+---------------------------------------
+
+## `Bluetooth Mode`
+
+    #include <SoftwareSerial.h>
+
+    // use 10, 11 pair in Arduino Mega
+    SoftwareSerial mySerial(8, 7); // RX, TX 
+    char inputByte;
+
+    void setup() {
+     mySerial.begin(9600);
+     Serial.begin(9600);
+     Serial.println("Hello, world !");
+
+     pinMode(13,OUTPUT);
+     digitalWrite(13,HIGH);
+    }
+
+    void loop() {
+      while(mySerial.available()>0){
+
+          inputByte = mySerial.read();
+    //      Serial.println(inputByte);
+
+          if (inputByte=='1'){
+          digitalWrite(13,HIGH);
         }
 
-        void loop() {
-          while(Serial.available()>0){
-
-              inputByte = Serial.read();
-              Serial.println(inputByte);
-
-              if (inputByte=='1'){
-              digitalWrite(13,HIGH);
-            }
-
-            else if (inputByte=='0'){
-              digitalWrite(13,LOW);
-              } 
-            }
+        else if (inputByte=='0'){
+          digitalWrite(13,LOW);
+          } 
         }
+    }
